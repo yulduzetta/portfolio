@@ -164,32 +164,39 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 300px;
-    height: 100px;
+    height: 150pt;
     background-size: cover;
-    background-position: center;
-    border: 2px solid var(--light-blue);
+    border: 5px solid var(--light-blue);
 }
-.porfolio-grid-item div {
-    background-color: var(--light-blue);
+
+.portfolio-desc {
+    background-color:var(--light-blue);
+    width: max-content;
+    padding: 5pt;
+    margin-bottom: 10pt;
+}
+
+.portfolio-desc>p{
+    font-size: small;
 }
 
 #surf-sport{
-    background-image: url('../assets/images/run-buddy.png');
+    background-image: url('../assets/images/surfer-img.jpeg');
     grid-column: 1 / 3;
     grid-row: 1 / 3;
+    height: 100%;
 }
 
 #led-wall{
-    background-image: url('../assets/images/run-buddy.png');
+    background-image: url('../assets/images/led-img.jpeg');
 }
 
 #calculator{
-    background-image: url('../assets/images/run-buddy.png');
+    background-image: url('../assets/images/calculator-img.jpeg');
 }
 
 #seo-solutions{
-    background-image: url('../assets/images/run-buddy.png');
+    background-image: url('../assets/images/seo-solutions.png');
 }
 
 #run-buddy{
