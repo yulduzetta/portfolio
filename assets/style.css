@@ -2,7 +2,8 @@
 :root {
     --secondary-color: #1c3666;
     --light-blue: #94bcd3;
-    --primary-color: #f7f8f8;
+    --primary-color: #f5fdfd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 * {
@@ -17,7 +18,6 @@ h1{
 /* Global CSS ends */
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--secondary-color);
   }
 
@@ -28,11 +28,10 @@ header {
     justify-content: space-between;
     background-color: var(--secondary-color);
     align-items: center;
-    /* position: sticky;
+    position: sticky;
     top: 0;
-    z-index: 9999; */
+    z-index: 9999;
 }
-
 
 header a {
     text-decoration: none;
@@ -66,6 +65,13 @@ header nav ul li a {
 header nav ul li {
     margin: 2px 5px;
 }
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
 /* Header and Navigation: end */
 
 /* Hero section: start  */
@@ -103,8 +109,9 @@ section {
     margin: 10px;
 }
 
-.value-props h1 {
-    padding-left: 100pt;
+.value-props h2 {
+    font-size: 40px;
+    padding-left: 130pt;
     padding-right: 15pt;
     flex: 2 20%;
     text-align: right;
@@ -112,18 +119,84 @@ section {
 }
 
 .content {
-    text-align: justify;
+    text-align: left;
     flex: 2 70%;
     font-size: larger;
     padding-left: 20pt;
     padding-right: 80pt;
 }
 #about-me p{
-    padding-bottom: 20px;
+    padding-bottom: 18px;
 }
 
-#contact-info address {
+#contact-me .details {
     display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    font-weight: bold;
 }
-/* Value Props section: end */
+#contact-me .details div {
+    padding: 3px 9px;
+    border-bottom: 2px solid;
+}
+
+/* removes hyperlink styling */
+a {
+  text-decoration: none;
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+}
+/* only underline on hover or once clicked */
+.contact-me a:hover, a:active {
+    text-decoration: underline;
+    color: var(--light-blue)
+  } 
+
+/* Portfolio section: start */
+.portfolio-grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-rows: minmax(100px, auto);
+}
+
+.porfolio-grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 300px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--light-blue);
+}
+.porfolio-grid-item div {
+    background-color: var(--light-blue);
+}
+
+#surf-sport{
+    background-image: url('../assets/images/run-buddy.png');
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+#led-wall{
+    background-image: url('../assets/images/run-buddy.png');
+}
+
+#calculator{
+    background-image: url('../assets/images/run-buddy.png');
+}
+
+#seo-solutions{
+    background-image: url('../assets/images/run-buddy.png');
+}
+
+#run-buddy{
+    background-image: url('../assets/images/run-buddy.png');
+}
+
+/* Portfolio section: end */
+
+/* Value Props: end */
 
