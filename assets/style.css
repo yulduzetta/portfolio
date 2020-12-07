@@ -204,8 +204,15 @@ a {
 .porfolio-grid-item:hover{
     opacity: 100%;
 }
-.porfolio-grid-item>a:link {
+.porfolio-grid-item a:link {
     visibility: hidden;
+}
+
+.porfolio-grid-item:hover a {
+    visibility: visible;
+    color: white;
+    background-color: black;
+    font-size: large;
 }
 
 .portfolio-desc {
