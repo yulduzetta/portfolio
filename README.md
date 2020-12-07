@@ -2,6 +2,8 @@
 
 ### Here are few considerations to keep in mind: 
  - This repo is in WIP process as I learn how to build cool stuff. 
+ 
+ - You can simply checkout the code and run it locally or view it direcly via Github Pages: https://yulduzetta.github.io/portfolio/
 
  - Feel free to leave your feedback by opening a new issue/PR. 
  
