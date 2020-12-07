@@ -1,8 +1,8 @@
 /* Global CSS */
 :root {
-    --secondary-color: #1c3666;
-    --light-blue: #94bcd3;
-    --primary-color: #f5fdfd;
+    --secondary-color:#0b1b38;
+    --tertiary-color:#ad7c3ffa;
+    --primary-color:#ffffffb3;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -39,7 +39,7 @@ header a {
 }
 
 header h1 {
-    background-color: var(--light-blue);
+    background-color: var(--tertiary-color);
     width: 30%;
     text-align: right;
     padding: 2px 10px;
@@ -58,7 +58,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: normal;
     font-size: x-large;
-    color: var(--light-blue);
+    color: var(--tertiary-color);
     border-bottom: 4px solid;
 }
 
@@ -76,11 +76,13 @@ header nav ul li a:hover {
 
 /* Hero section: start  */
 .hero {
-    height: 400px;
+    height: 300pt;
     width: 100%;
+    background-position: center;  
+    background-repeat: no-repeat;
     background-image: url('../assets/images/hero-img.jpg');
     background-size: cover;
-    background-position: center;   
+ 
     display: flex;
     align-items: flex-end;
     flex-direction: column-reverse;
@@ -89,7 +91,7 @@ header nav ul li a:hover {
 
 .hero h2{
     font-size: xx-large;
-    background-color: var(--light-blue);
+    background-color: var(--tertiary-color);
     padding: 10px;
     margin-bottom: 20px;
     margin-right: 100px;
@@ -100,7 +102,7 @@ header nav ul li a:hover {
 .value-props {
     background-color: var(--primary-color);   
     display: flex;
-    padding-top: 20px;
+    padding-top: 40px;
     margin: 0px;
 }
 
@@ -111,7 +113,7 @@ section {
 
 .value-props h2 {
     font-size: 40px;
-    padding-left: 130pt;
+    padding-left: 100pt;
     padding-right: 15pt;
     flex: 2 20%;
     text-align: right;
@@ -125,10 +127,39 @@ section {
     padding-left: 20pt;
     padding-right: 80pt;
 }
-#about-me p{
-    padding-bottom: 18px;
+
+/* About Me section: start */
+#about-me>div{
+    display: flex;
+    padding-top: 20px;
 }
 
+/* About Me section: start */
+.about-me-grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.about-me-grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-me-grid-item img{
+    grid-row: 1 / 2;
+    width: 200px;
+    border: 5px solid var(--tertiary-color);
+}
+
+.about-me-grid-container .blob{
+    grid-column: 2 / 5 ;
+}
+
+/* About Me section: end */
+
+/* Contact Me: :start */
 #contact-me .details {
     display: flex;
     justify-content: space-around;
@@ -149,7 +180,7 @@ a {
 /* only underline on hover or once clicked */
 .contact-me a:hover, a:active {
     text-decoration: underline;
-    color: var(--light-blue)
+    color: var(--tertiary-color)
   } 
 
 /* Portfolio section: start */
@@ -166,11 +197,11 @@ a {
     justify-content: flex-end;
     height: 150pt;
     background-size: cover;
-    border: 5px solid var(--light-blue);
+    border: 5px solid var(--tertiary-color);
 }
 
 .portfolio-desc {
-    background-color:var(--light-blue);
+    background-color:var(--tertiary-color);
     width: max-content;
     padding: 5pt;
     margin-bottom: 10pt;
@@ -207,3 +238,11 @@ a {
 
 /* Value Props: end */
 
+/* Footer: start */
+footer {
+    background-color: var(--secondary-color);
+    padding: 40px 35px;
+    text-align: center;
+    color: var(--tertiary-color);
+
+}
