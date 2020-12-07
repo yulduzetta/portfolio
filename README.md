@@ -1,8 +1,6 @@
 # Welcome! :heart:
 
-## Description:
-
-  Here are few considerations to keep in mind: 
+### Here are few considerations to keep in mind: 
  - This repo is in WIP process as I learn how to build cool stuff. 
 
  - Feel free to leave your feedback by opening a new issue/PR. 
