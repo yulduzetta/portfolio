@@ -264,6 +264,5 @@ footer {
     background-color: var(--secondary-color);
     padding: 40px 35px;
     text-align: center;
-    color: var(--tertiary-color);
-
+    color: var(--tertiary-color)
 }
