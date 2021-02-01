@@ -250,9 +250,9 @@ a {
 #run-buddy{
     background-image: url('../assets/images/run-buddy.png');
 }
-#run-buddy:hover {
-    /* <!-- <a href="https://yulduzetta.github.io/run-buddy/" target="_blank">Run Buddy HTML/CSS</a> --> */
 
+#covid-dashboard {
+    background-image: url('../assets/images/covid-dashboard.png');
 }
 
 /* Portfolio section: end */
